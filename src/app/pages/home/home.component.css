@@ -1,0 +1,32 @@
+.wrapper {
+    background: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+.navbar.navbar-3 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=6a1b9a');
+}
+.navbar-light .navbar-toggler {
+    color: #4E3995;
+    font-size: 26px;
+}
+.navbar-light .navbar-toggler:focus {
+    outline-color: #4E3995;
+    background: white;
+    border: 1px solid;
+}
+.nav-link {
+    color: #272D4E !important;
+    font-weight: 600;
+    font-size: 18px;
+    width: fit-content;
+}
+.nav-link:visited{
+    color: #4E3995;
+}
+.start-btn {
+    background: #4E3995;
+    border-radius: 5px;
+    color: white !important;
+    text-decoration: none;
+}

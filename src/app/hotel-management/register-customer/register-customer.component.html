@@ -1,0 +1,37 @@
+<div class="container-fluid wrapper">
+    <div class="logo d-flex justify-content-start point" routerLink="/">
+        <mat-icon  style="font-size: 30px;" class="mt-3 text-primary">home</mat-icon>  &nbsp; <h2 class="mt-3">Luxury Hotel</h2>
+    </div>
+    <div class="container">
+        <div class="header d-flex justify-content-center">
+            <h3>Customer Registration</h3>
+        </div>
+        <div class="form-field d-flex justify-content-center">
+            <mat-card class="example-card">
+            <mat-card-content>
+        <form class="example-form" [formGroup]="customerForm" (ngSubmit)="submitCustomerForm()">
+            <mat-form-field class="example-full-width">
+              <mat-label>Customer name</mat-label>
+              <input matInput placeholder="Adeyinka" formControlName="name">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Address</mat-label>
+              <input matInput placeholder="06, Aypdele street" formControlName="address">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+            <mat-label>Room allocated</mat-label>
+            <select matNativeControl required formControlName="roomid" class="point">
+                <option value="">Select room to be allocated</option>
+                <option class="point" *ngFor="let x of rooms | async" value="{{x.id}}">{{x.room}}</option>
+            </select>
+        </mat-form-field>
+
+            <button [disabled]="customerForm.invalid" type="submit" class="start-btn" mat-button color="primary">Proceed</button>
+          </form>
+        </mat-card-content>
+    </mat-card>
+        </div>
+        </div>
+        </div>

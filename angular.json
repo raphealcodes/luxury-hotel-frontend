@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -88,6 +92,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "luxury-hotel-frontend"
+    }
+  },
+  "defaultProject": "luxury-hotel-frontend",
+  "cli": {
+    "analytics": "3d2a9efd-f4e8-43be-8423-bd2a97b05a93"
+  }
 }
